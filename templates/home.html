@@ -1,0 +1,29 @@
+<html lang="en">
+
+<head>
+    <link href="static/main.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+<h1 style="text-align:center;">WELCOME TO URL SHORTENER</h1>
+<div class="box">
+    <form action="/convert" method="post">
+        <br> <br> <br> <br>
+        <label for="url">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            Enter an https:// URL:</label>
+        <br>
+        <input type="url" name="url" id="url"
+               placeholder="https://example.com"
+               pattern="https://.*" size="30"
+               required>
+        <br>
+        <input type="submit" value="Convert">
+        <br>
+        <br>
+        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Shortened URL is: {{url}}</p>
+        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Number of clicks: {{count}}</p>
+    </form>
+</div>
+</body>
+
+</html>
